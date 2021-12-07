@@ -14,3 +14,16 @@ as that has been done for you.  You start with the rails g model User command as
 and complete the directions in those notes and in the
 video.  This application is also used and modified in the following video:
 https://teamtreehouse.com/library/has-one-associations .
+
+____________________________________________________________________________________
+## Assignment notes
+
+`rails g model User name:string nickname:string`
+`rails g model Forum name:string public:boolean`
+`bin/rails db:migrate`
+`bin/rake db:seed`
+
+seed data for the users and forums models
+
+create join table
+`bin/rails g migration CreateJoinTableUsersForums users forums`
