@@ -27,3 +27,9 @@ seed data for the users and forums models
 
 create join table
 `bin/rails g migration CreateJoinTableUsersForums users forums`
+
+use the has_and_belongs_to_many method on the models
+
+add forums to a user - but in the console
+`user = User.find_by(name: "Jay")`
+`user.forums = << Forum.find_by(name: "Ruby")`
